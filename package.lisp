@@ -76,6 +76,8 @@
    #:scalar-d3
    #:d0 #:d1 #:d2 #:d3
 
+   #:save-image
+
    #:get-total
    #:get-seq-elem-rect
    #:with-named-window
@@ -83,5 +85,6 @@
    #:with-ipl-images
    #:with-init-font
 
+   
    #:create-trackbar
    #:set-mouse-callback))
