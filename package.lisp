@@ -67,6 +67,14 @@
    #:ipl-width
    #:ipl-width-step
    #:ipl-height
+   #:ipl-n-channels
+   #:ipl-depth
+
+   #:scalar-d0
+   #:scalar-d1
+   #:scalar-d2
+   #:scalar-d3
+   #:d0 #:d1 #:d2 #:d3
 
    #:get-total
    #:get-seq-elem-rect

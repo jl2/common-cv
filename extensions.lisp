@@ -121,6 +121,14 @@
   (cffi:with-foreign-slots ((height) ipl (:struct ipl-image))
     height))
 
+(defun ipl-n-channels (ipl)
+  (cffi:with-foreign-slots ((n-channels) ipl (:struct ipl-image))
+    n-channels))
+
+(defun ipl-depth (ipl)
+  (cffi:with-foreign-slots ((depth) ipl (:struct ipl-image))
+    depth))
+
 (defun ipl-data-origin (ipl)
   (cffi:with-foreign-slots ((image-data-origin) ipl (:struct ipl-image))
     image-data-origin))

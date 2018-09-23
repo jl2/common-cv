@@ -152,8 +152,12 @@
 (cffi:defcstruct (Scalar :class %CvScalar)
   (val :double :count 4))
 
+(declaim (inline scalar-d0 scalar-d1 scalar-2 scalar-d3))
 (defstruct scalar
-  d0 d1 d2 d3)
+   (d0 0.0d0 :type double-float)
+   (d1 0.0d0 :type double-float)
+   (d2 0.0d0 :type double-float)
+   (d3 0.0d0 :type double-float))
 
 (defun scalar (d0 &optional (d1 0.0) (d2 0.0) (d3 0.0))
   (make-scalar :d0 (coerce d0 'double-float)
